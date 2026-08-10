@@ -38,7 +38,14 @@ export default async function ChampionPage({ params }: Props) {
   return (
     <MainLayout>
       <div className={styles.coverWrapper}>
-        <Image src={skins[0].centeredUrl} alt="cover" className={styles.cover} priority fill />
+        <Image
+          src={skins[0].centeredUrl}
+          alt="cover"
+          className={styles.cover}
+          priority
+          fill
+          sizes="(max-width: 1200px) 100vw, 1200px"
+        />
       </div>
       <h1>{championName}</h1>
       <div className={styles.row}>
