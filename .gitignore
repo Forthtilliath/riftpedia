@@ -36,3 +36,8 @@ yarn-error.log*
 next-env.d.ts
 
 .env
+
+# markdown (only README and CHANGELOG are tracked)
+*.md
+!README.md
+!CHANGELOG.md
